@@ -1,0 +1,11 @@
+NTP:
+- nmap -sU -p 123 --script=ntp-info.nse -iL iplist.txt
+- nmap -sU -p 123 --script=ntp-monlist.nse -iL iplist.txt
+
+IMAP:
+- Cleartext login check:
+- - Start wireshark capture
+- - nc -nv <ip addr> 143
+- - A1 login test@fakeemail.com fakepassword123
+- - A1 NO [AUTHENTICATIONFAILED] Authentication Failed.
+
