@@ -1,3 +1,7 @@
+Scan:
+- nmap -sS -Pn -v -p- -T4 -iL <iplist.txt> -oA /root/PROJECT
+- nmap -sU --top-ports 1017 -v <iplist.txt> -oA /root/PROJECT_UDP
+
 NTP:
 - nmap -sU -p 123 --script=ntp-info.nse -iL iplist.txt
 - nmap -sU -p 123 --script=ntp-monlist.nse -iL iplist.txt
