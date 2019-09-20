@@ -7,6 +7,11 @@ NTP:
 - nmap -sU -p 123 --script=ntp-info.nse -iL iplist.txt
 - nmap -sU -p 123 --script=ntp-monlist.nse -iL iplist.txt
 
+- ntpq <ip addr>
+- ntpq> help
+- ntpq> readlist
+
+
 IMAP:
 - ls -l /usr/share/nmap/scripts | grep imap
 - Cleartext login check:
